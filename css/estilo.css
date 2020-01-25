@@ -4,7 +4,11 @@ header {
   display: flex;
   flex-wrap: wrap;
   background-color: rgba(0, 0, 10, 0.1);
+  background-color: red;
   justify-content: space-between; }
+
+.mierda {
+  border: 2px solid red; }
 
 .yoda {
   order: 2;
@@ -13,7 +17,8 @@ header {
   flex-basis: 160px;
   margin: 0;
   padding: 0;
-  width: auto; }
+  width: auto;
+  border: 2px solid red; }
 
 .titulos {
   order: 1;

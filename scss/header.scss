@@ -3,6 +3,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     background-color: rgba(0, 0, 10, 0.1);
+    background-color: red;
     
     //border: 2px solid red;
     //height: 10px;
@@ -11,7 +12,9 @@ header {
     justify-content: space-between
 
 }
-
+.mierda{
+     border: 2px solid red;
+}
 
 .yoda {
 
@@ -25,6 +28,7 @@ header {
     margin: 0;
     padding: 0;
     width: auto;
+    border: 2px solid red;
  
 
 
