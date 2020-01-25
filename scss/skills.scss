@@ -1,0 +1,23 @@
+//---------------skills-------------------------
+
+.skills>.tags {
+    text-align: center;
+    margin-top: 1em;
+
+    .tag {
+        //color: white;
+        background-color: grey;
+        //opacity: 0.8;
+
+        font-size: 0.8em;
+        padding: 3px 10px;
+
+        margin: 5px 0 5px 5px;
+
+        margin-right: 5px;
+        border-radius: 4px;
+        display: inline-block;
+    }
+
+
+}

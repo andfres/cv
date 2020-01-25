@@ -1,0 +1,59 @@
+<header>
+
+    <div class="idiomas">
+
+        {# <a class=" {% if lengua == "en" %}active{% endif %}" href="#">Enghish</a>
+        <a class=" {% if lengua == "es" %}active{% endif %}" href="{{ prefijo }}/es/index.html">Español</a>
+        <a class=" {% if lengua == "it" %}active{% endif %}" href="{{ prefijo }}/index.html">Italiano</a>
+     #}
+
+        {% if lengua !== "en" %}
+            <a href="#">Enghish</a>
+        {% endif %}
+
+        {% if lengua !== "es" %}
+            <a href="{{ prefijo }}/es/index.html">Español</a>
+        {% endif %}
+
+        {% if lengua !== "it" %}
+            <a href="{{ prefijo }}/index.html">Italiano</a>
+        {% endif %}
+
+    </div>
+
+
+
+    {# <div class="yoda" > #}
+        <img class= "yoda" src="{{ prefijo }}/img/yoda.jpg" alt="yoda">
+    {# </div> #}
+
+    <div class="titulos">
+        <h1 class="nombre">Andrés Fresno</h1>
+        <h2>{{ posicion }}</h2> 
+    </div>
+    
+    <div class="links">
+        <div class="box_links">
+            <div>
+                <div class="svg"><img src="{{ prefijo }}/img/correo.svg"></div>
+                <p><a href="mailto:javfres@gmail.com">andfres@gmail.com</p>
+            </div>
+
+            <div>
+                <div class="svg"><img  src="{{ prefijo }}/img/lugar.svg"></div>
+                <p>San Vito al Tagliamento <br>
+                Pordenone</p>
+            </div>
+            
+            <div>
+                <div class="svg"><img  src="{{ prefijo }}/img/nacido.svg" alt="{{ nacido }}"></div> 
+                <p>Valladolid, {{ espana }} <br>
+                21-12-1989</p> 
+            </div>
+
+
+
+        </div> {# box links #}
+    </div>{#links #}
+
+</header>

@@ -1,0 +1,35 @@
+.autorizo {
+
+      padding: 5px;
+
+      font-size: 14px;
+
+}
+
+
+
+.thiscv{
+    padding: 5px;
+    
+    font-size: 14px;
+    background-color: white;
+    border: 0.8px solid grey;
+    border-radius: 6px;
+
+    width: 270px;
+    box-shadow: 2px 2px 1px grey;
+    margin-bottom: 10px;
+}
+
+@media all and (min-width: 794px) {
+
+    .thiscv {
+   
+        position: absolute;
+        bottom: 30px;
+        right: 20px;
+
+    }
+
+    
+}

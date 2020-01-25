@@ -1,0 +1,38 @@
+---
+"lengua": "it"
+"posicion": "svilupatore web"
+"espana" : "Spagna"
+"nacido" : "nato a"
+---
+
+{% extends "./componentes/base.njk" %}
+
+
+
+
+{% block content %}
+  <div class="box-container">
+
+
+    {% include "./componentes/header.njk" %}
+    {% include "./componentes/it/main.njk" %}
+    {% include "./componentes/it/footer.njk" %}
+
+    <div class="autorizo">
+        <small>Autorizzo il trattamento dei miei dati personali ai sensi del Dlgs 196 del 30 giugno 2003.</small>
+    </div>
+
+    
+    <div class="thiscv">
+      <small>This resume has been generated using Node.js, HTML5 & SASS, and 11ty/eleventy check it out at: <br>
+
+          <a href="https://github.com/andfres/cv.git" class="code">
+              &gt; git clone https://github.com/andfres/cv.git
+          </a>
+      </small>
+    </div>
+
+  </div>
+
+{% endblock %}
+

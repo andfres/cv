@@ -1,0 +1,42 @@
+
+
+.formacion {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+
+.cursos {
+    //width: 100%;
+    //background-color: blue;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-between;
+    
+    
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+
+
+// .curso{
+//     //border: 1px solid black;
+//     // margin: 3px;
+
+
+
+// }
+
+.curso-nombre {
+    font-weight: bolder;
+
+}
+
+@media screen and (min-width: 755px) {
+
+    .cursos{
+        grid-template-columns: auto auto;
+    }
+}

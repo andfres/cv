@@ -1,0 +1,186 @@
+header {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 10, 0.1);
+    
+    //border: 2px solid red;
+    //height: 10px;
+    
+    //align-items: center;
+    justify-content: space-between
+
+}
+
+
+.yoda {
+
+    order: 2;
+    flex-grow: 2;
+    flex-shrink: 3;
+    flex-basis: 160px;
+    
+   // width: 180px;
+
+    margin: 0;
+    padding: 0;
+    width: auto;
+ 
+
+
+}
+
+
+
+
+
+.titulos {
+    order: 1;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 0 20px 0 20px;
+    border: 1px solid red;
+    text-align: center;
+
+
+    & .nombre {
+        font-size: 2em;
+        font-family: 'Permanent Marker', cursive;
+        line-height: 1em;
+
+        margin-top: 10px;
+        margin-bottom: 20px;
+        white-space: wrap;
+        //border: 2px solid red;
+    }
+
+    & h2 {
+        font-size: 1em;
+        font-family: $mainfont;
+        white-space: nowrap;
+        margin-bottom: 20px;
+        //border: 2px solid red;
+    }
+
+}
+
+
+.links {
+
+    order: 3;
+    flex-grow: 0;
+    flex-shrink: 0;
+    //flex-basis: 150px;
+
+
+    position: relative;
+    right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 13px;
+    
+
+}
+
+
+.box_links {
+    
+    //width: 170px;
+    width: 200px;
+    border: 2px solid green;
+
+}
+
+.box_links div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+
+}
+.box_links p{
+    display: inline-block;
+    margin-left: 10px;
+    
+}
+
+.box_links a{
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.box_links a:hover {
+    //text-decoration: inherit;
+    color: blue;
+}
+
+
+.svg {
+    width: 20px;
+    height: 20px;
+    //border: 1px solid red;
+    display: inline-block;
+    
+}
+
+.svg img {
+    max-width: 100%;
+    max-height: 100%;
+    //object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+       //border: 1px solid green;
+}
+
+
+
+
+@media all and (min-width: 600px) {
+    header{
+        flex-wrap: nowrap;
+        //background-color: yellow;
+    }
+
+    .yoda {
+        order: 1;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 180px;
+
+    }
+
+    .titulos {
+        order: 2;
+        width: auto;
+        text-align: left;
+        margin-right: initial;
+           //para pegar la izquierda
+        margin-right: auto;
+
+    }
+}
+
+
+
+//////////////////////////////////////////////
+.idiomas {
+
+    position: absolute;
+    right: 0;
+    top: -15px;
+    font-size: 13px;
+
+    a {
+        color: grey;
+        text-decoration: none;
+        margin-left: 1em;
+
+    }
+
+    a:hover {
+
+        color: blue;
+    }
+}
+
+
