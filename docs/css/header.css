@@ -1,0 +1,111 @@
+header {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 10, 0.1);
+  justify-content: space-between; }
+
+.mierda {
+  border: 2px solid red; }
+
+.yoda {
+  order: 2;
+  flex-grow: 2;
+  flex-shrink: 3;
+  flex-basis: 160px;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  border: 2px solid red; }
+
+.yoda img {
+  width: 100%; }
+
+.titulos {
+  order: 1;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 0 20px 0 20px;
+  border: 1px solid red;
+  text-align: center; }
+  .titulos .nombre {
+    font-size: 2em;
+    font-family: 'Permanent Marker', cursive;
+    line-height: 1em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    white-space: wrap; }
+  .titulos h2 {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+    margin-bottom: 20px; }
+
+.links {
+  order: 3;
+  flex-grow: 0;
+  flex-shrink: 0;
+  position: relative;
+  right: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 13px; }
+
+.box_links {
+  width: 200px;
+  border: 2px solid green; }
+
+.box_links div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center; }
+
+.box_links p {
+  display: inline-block;
+  margin-left: 10px; }
+
+.box_links a {
+  text-decoration: inherit;
+  color: inherit; }
+
+.box_links a:hover {
+  color: blue; }
+
+.svg {
+  width: 20px;
+  height: 20px;
+  display: inline-block; }
+
+.svg img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
+@media all and (min-width: 600px) {
+  header {
+    flex-wrap: nowrap; }
+  .yoda {
+    order: 1;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 180px; }
+  .titulos {
+    order: 2;
+    width: auto;
+    text-align: left;
+    margin-right: initial;
+    margin-right: auto; } }
+
+.idiomas {
+  position: absolute;
+  right: 0;
+  top: -15px;
+  font-size: 13px; }
+  .idiomas a {
+    color: grey;
+    text-decoration: none;
+    margin-left: 1em; }
+  .idiomas a:hover {
+    color: blue; }

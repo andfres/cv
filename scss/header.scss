@@ -3,7 +3,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     background-color: rgba(0, 0, 10, 0.1);
-    background-color: red;
+   
     
     //border: 2px solid red;
     //height: 10px;
@@ -34,6 +34,10 @@ header {
 
 }
 
+.yoda img{
+    width: 100%;
+}
+
 
 
 
@@ -60,7 +64,7 @@ header {
 
     & h2 {
         font-size: 1em;
-        font-family: $mainfont;
+        font-family: Arial, Helvetica, sans-serif;
         white-space: nowrap;
         margin-bottom: 20px;
         //border: 2px solid red;
@@ -68,7 +72,7 @@ header {
 
 }
 
-
+//dfasdf
 .links {
 
     order: 3;

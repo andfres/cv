@@ -4,7 +4,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   background-color: rgba(0, 0, 10, 0.1);
-  background-color: red;
   justify-content: space-between; }
 
 .mierda {
@@ -19,6 +18,9 @@ header {
   padding: 0;
   width: auto;
   border: 2px solid red; }
+
+.yoda img {
+  width: 100%; }
 
 .titulos {
   order: 1;
@@ -36,7 +38,7 @@ header {
     white-space: wrap; }
   .titulos h2 {
     font-size: 1em;
-    font-family: arial;
+    font-family: Arial, Helvetica, sans-serif;
     white-space: nowrap;
     margin-bottom: 20px; }
 
