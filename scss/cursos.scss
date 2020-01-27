@@ -1,5 +1,3 @@
-
-
 .formacion {
     position: relative;
     box-sizing: border-box;
@@ -8,8 +6,7 @@
 }
 
 .cursos {
-    //width: 100%;
-    //background-color: blue;
+
     display: grid;
     grid-template-columns: auto;
     justify-content: space-between;
@@ -21,13 +18,6 @@
 
 
 
-// .curso{
-//     //border: 1px solid black;
-//     // margin: 3px;
-
-
-
-// }
 
 .curso-nombre {
     font-weight: bolder;

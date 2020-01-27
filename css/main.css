@@ -18,15 +18,14 @@ main {
     border: 1px solid grey;
     background-color: white; }
     .job .logo img {
-      width: 60px;
-      height: 60px; }
+      width: 100%; }
   .job .texto {
     margin-left: 100px; }
 
 .info {
   display: flex;
   justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   border-bottom: 1px solid black;
   margin-top: 10px;
   color: dimgray; }
@@ -56,7 +55,12 @@ main p, footer p {
   line-height: 1.3em; }
 
 .fecha {
-  margin-right: 1em; }
+  margin-right: 40px; }
+
+.info p {
+  white-space: nowrap;
+  flex-shrink: 0;
+  flex-grow: 0; }
 
 .row1 {
   margin-right: 0;
@@ -69,9 +73,6 @@ main p, footer p {
 
 .main p {
   margin-bottom: 5px; }
-
-.info p {
-  margin: 0; }
 
 @media screen and (min-width: 700px) {
   main {

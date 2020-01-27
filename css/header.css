@@ -5,29 +5,29 @@ header {
   background-color: rgba(0, 0, 10, 0.1);
   justify-content: space-between; }
 
-.mierda {
-  border: 2px solid red; }
-
-.yoda {
+.me {
   order: 2;
-  flex-grow: 2;
-  flex-shrink: 3;
+  flex-grow: 1;
+  flex-shrink: 2;
   flex-basis: 160px;
   margin: 0;
   padding: 0;
-  width: auto;
-  border: 2px solid red; }
+  border-radius: 50%;
+  overflow: hidden;
+  box-sizing: content-box; }
 
-.yoda img {
-  width: 100%; }
+.me img {
+  width: 100%;
+  display: block;
+  filter: grayscale(100%); }
 
 .titulos {
   order: 1;
   width: 100%;
   text-transform: uppercase;
   padding: 0 20px 0 20px;
-  border: 1px solid red;
-  text-align: center; }
+  text-align: center;
+  margin-top: 10px; }
   .titulos .nombre {
     font-size: 2em;
     font-family: 'Permanent Marker', cursive;
@@ -45,48 +45,54 @@ header {
   order: 3;
   flex-grow: 0;
   flex-shrink: 0;
-  position: relative;
-  right: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 13px; }
+  padding-left: 10px;
+  font-size: 13px;
+  margin-top: auto;
+  margin-bottom: auto; }
 
 .box_links {
-  width: 200px;
-  border: 2px solid green; }
+  width: 200px; }
 
-.box_links div {
-  margin-top: 10px;
+.link {
+  margin-top: 5px;
   margin-bottom: 10px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  padding: 0; }
 
-.box_links p {
+.link p {
   display: inline-block;
-  margin-left: 10px; }
+  margin-left: 10px;
+  padding: 0;
+  align-self: center; }
 
-.box_links a {
+.link a {
   text-decoration: inherit;
   color: inherit; }
 
-.box_links a:hover {
+.links a:hover {
   color: blue; }
 
 .svg {
-  width: 20px;
-  height: 20px;
-  display: inline-block; }
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-content: center;
+  padding: 0;
+  align-self: center; }
 
 .svg img {
   max-width: 100%;
   max-height: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
   margin-left: auto;
   margin-right: auto; }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 620px) {
   header {
     flex-wrap: nowrap; }
-  .yoda {
+  .me {
     order: 1;
     flex-grow: 0;
     flex-shrink: 0;

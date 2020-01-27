@@ -1,8 +1,10 @@
 .autorizo {
 
       padding: 5px;
-
+    position: absolute;
       font-size: 14px;
+      bottom: 7px;
+      right: 10px;
 
 }
 
@@ -11,6 +13,7 @@
 .thiscv{
     padding: 5px;
     
+    position: static;
     font-size: 14px;
     background-color: white;
     border: 0.8px solid grey;
@@ -26,10 +29,17 @@
     .thiscv {
    
         position: absolute;
-        bottom: 30px;
-        right: 20px;
+        bottom: 5px;
+        left: 25px;
 
     }
 
+
+    // .thiscv {
+    //     position: absolute;
+    //     bottom: 330px;
+    //     right: 40px;
+    //     width: 200px;
+    // }
     
 }

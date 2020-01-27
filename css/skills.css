@@ -1,0 +1,18 @@
+.skills > .tags {
+  text-align: center;
+  margin-top: 1em; }
+
+.tag, .tag2 {
+  color: white;
+  background-color: grey;
+  font-size: 13px;
+  padding: 3px 10px;
+  border-radius: 4px;
+  display: inline-block; }
+
+.tag {
+  margin: 5px; }
+
+.tag2 {
+  margin: 0 5px;
+  font-weight: normal; }

@@ -1,4 +1,57 @@
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+body * {
+  margin: 0;
+  padding: 0;
+  font-family: arial; }
+
+body {
+  margin: auto;
+  align-content: center;
+  background-color: whitesmoke;
+  background-image: linear-gradient(45deg, #6f47ed 0%, #6f47ed 21%, #655ce9 21%, #655ce9 30%, #5b70e5 30%, #5b70e5 35%, #5285e2 35%, #5285e2 51%, #489ade 51%, #489ade 72%, #3eaeda 72%, #3eaeda 81%, #34c3d6 81%, #34c3d6 100%);
+  min-width: 300px;
+  max-width: 794px; }
+
+.box-container {
+  position: relative;
+  padding-top: 25px;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  background-color: white;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.5); }
+
+.section {
+  padding: 10px;
+  font-family: arial;
+  margin-top: 10px;
+  position: relative;
+  display: inline-block;
+  background-color: white;
+  background-color: #f0f0f0; }
+
+@media all and (min-width: 794px) {
+  .box-container {
+    height: 1123px;
+    padding-right: 25px;
+    padding-left: 25px; }
+  html {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .idiomas {
+    position: absolute;
+    top: -50px !important;
+    font-size: 15px !important; }
+    .idiomas a {
+      color: black !important; } }
+
+@media print {
+  html {
+    padding-top: 0;
+    padding-bottom: 0; }
+  .idiomas {
+    display: hiden; } }
+
 header {
   position: relative;
   display: flex;
@@ -6,29 +59,29 @@ header {
   background-color: rgba(0, 0, 10, 0.1);
   justify-content: space-between; }
 
-.mierda {
-  border: 2px solid red; }
-
-.yoda {
+.me {
   order: 2;
-  flex-grow: 2;
-  flex-shrink: 3;
+  flex-grow: 1;
+  flex-shrink: 2;
   flex-basis: 160px;
   margin: 0;
   padding: 0;
-  width: auto;
-  border: 2px solid red; }
+  border-radius: 50%;
+  overflow: hidden;
+  box-sizing: content-box; }
 
-.yoda img {
-  width: 100%; }
+.me img {
+  width: 100%;
+  display: block;
+  filter: grayscale(100%); }
 
 .titulos {
   order: 1;
   width: 100%;
   text-transform: uppercase;
   padding: 0 20px 0 20px;
-  border: 1px solid red;
-  text-align: center; }
+  text-align: center;
+  margin-top: 10px; }
   .titulos .nombre {
     font-size: 2em;
     font-family: 'Permanent Marker', cursive;
@@ -46,48 +99,54 @@ header {
   order: 3;
   flex-grow: 0;
   flex-shrink: 0;
-  position: relative;
-  right: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 13px; }
+  padding-left: 10px;
+  font-size: 13px;
+  margin-top: auto;
+  margin-bottom: auto; }
 
 .box_links {
-  width: 200px;
-  border: 2px solid green; }
+  width: 200px; }
 
-.box_links div {
-  margin-top: 10px;
+.link {
+  margin-top: 5px;
   margin-bottom: 10px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  padding: 0; }
 
-.box_links p {
+.link p {
   display: inline-block;
-  margin-left: 10px; }
+  margin-left: 10px;
+  padding: 0;
+  align-self: center; }
 
-.box_links a {
+.link a {
   text-decoration: inherit;
   color: inherit; }
 
-.box_links a:hover {
+.links a:hover {
   color: blue; }
 
 .svg {
-  width: 20px;
-  height: 20px;
-  display: inline-block; }
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-content: center;
+  padding: 0;
+  align-self: center; }
 
 .svg img {
   max-width: 100%;
   max-height: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
   margin-left: auto;
   margin-right: auto; }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 620px) {
   header {
     flex-wrap: nowrap; }
-  .yoda {
+  .me {
     order: 1;
     flex-grow: 0;
     flex-shrink: 0;
@@ -131,15 +190,14 @@ main {
     border: 1px solid grey;
     background-color: white; }
     .job .logo img {
-      width: 60px;
-      height: 60px; }
+      width: 100%; }
   .job .texto {
     margin-left: 100px; }
 
 .info {
   display: flex;
   justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   border-bottom: 1px solid black;
   margin-top: 10px;
   color: dimgray; }
@@ -169,7 +227,12 @@ main p, footer p {
   line-height: 1.3em; }
 
 .fecha {
-  margin-right: 1em; }
+  margin-right: 40px; }
+
+.info p {
+  white-space: nowrap;
+  flex-shrink: 0;
+  flex-grow: 0; }
 
 .row1 {
   margin-right: 0;
@@ -182,9 +245,6 @@ main p, footer p {
 
 .main p {
   margin-bottom: 5px; }
-
-.info p {
-  margin: 0; }
 
 @media screen and (min-width: 700px) {
   main {
@@ -200,14 +260,21 @@ main p, footer p {
 .skills > .tags {
   text-align: center;
   margin-top: 1em; }
-  .skills > .tags .tag {
-    background-color: grey;
-    font-size: 0.8em;
-    padding: 3px 10px;
-    margin: 5px 0 5px 5px;
-    margin-right: 5px;
-    border-radius: 4px;
-    display: inline-block; }
+
+.tag, .tag2 {
+  color: white;
+  background-color: grey;
+  font-size: 13px;
+  padding: 3px 10px;
+  border-radius: 4px;
+  display: inline-block; }
+
+.tag {
+  margin: 5px; }
+
+.tag2 {
+  margin: 0 5px;
+  font-weight: normal; }
 
 .formacion {
   position: relative;
@@ -230,10 +297,14 @@ main p, footer p {
 
 .autorizo {
   padding: 5px;
-  font-size: 14px; }
+  position: absolute;
+  font-size: 14px;
+  bottom: 7px;
+  right: 10px; }
 
 .thiscv {
   padding: 5px;
+  position: static;
   font-size: 14px;
   background-color: white;
   border: 0.8px solid grey;
@@ -245,60 +316,5 @@ main p, footer p {
 @media all and (min-width: 794px) {
   .thiscv {
     position: absolute;
-    bottom: 30px;
-    right: 20px; } }
-
-body * {
-  margin: 0;
-  padding: 0;
-  font-family: arial; }
-
-.section {
-  padding: 10px;
-  font-family: arial;
-  margin-top: 10px;
-  position: relative;
-  display: inline-block;
-  background-color: white;
-  background-color: #f0f0f0; }
-
-.linea {
-  display: none;
-  background-color: red;
-  position: absolute;
-  top: 1123px;
-  width: 100%;
-  height: 5px;
-  left: 0; }
-
-.box-container {
-  position: relative;
-  padding-top: 25px;
-  padding-right: 2vw;
-  padding-left: 2vw;
-  background-color: white;
-  box-sizing: border-box;
-  overflow: hidden; }
-
-@media all and (min-width: 794px) {
-  .box-container {
-    height: 1123px;
-    padding-right: 25px;
-    padding-left: 25px; } }
-
-body {
-  margin: auto;
-  align-content: center;
-  background-color: whitesmoke;
-  background-color: red;
-  min-width: 300px;
-  max-width: 794px;
-  overflow-x: hidden; }
-
-.dimension {
-  font-family: arial;
-  font-size: 15px;
-  position: fixed;
-  top: 0;
-  background-color: white;
-  z-index: 999; }
+    bottom: 5px;
+    left: 25px; } }
