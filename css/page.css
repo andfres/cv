@@ -1,3 +1,11 @@
+@page {
+  size: A4 portrait;
+  margin: 0; }
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact; } }
+
 body * {
   margin: 0;
   padding: 0;
@@ -7,7 +15,7 @@ body {
   margin: auto;
   align-content: center;
   background-color: whitesmoke;
-  background-image: linear-gradient(45deg, #6f47ed 0%, #6f47ed 21%, #655ce9 21%, #655ce9 30%, #5b70e5 30%, #5b70e5 35%, #5285e2 35%, #5285e2 51%, #489ade 51%, #489ade 72%, #3eaeda 72%, #3eaeda 81%, #34c3d6 81%, #34c3d6 100%);
+  background-color: red;
   min-width: 300px;
   max-width: 794px; }
 
@@ -49,4 +57,12 @@ body {
     padding-top: 0;
     padding-bottom: 0; }
   .idiomas {
-    display: hiden; } }
+    display: none; }
+  .box-container {
+    box-shadow: none; }
+  .box-container {
+    margin: 0;
+    height: 1123px; }
+  body {
+    width: 794px;
+    height: 1123px; } }

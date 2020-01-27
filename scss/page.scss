@@ -1,7 +1,11 @@
 //A4  a  94dpi => 794 x 1123 px
 
+@page {
+    size: A4 portrait;
+    margin: 0;
+}
 
-
+@media print {body {-webkit-print-color-adjust: exact;}}
 
 body * {
     margin: 0;
@@ -14,8 +18,8 @@ body {
     margin: auto;
     align-content: center;
     background-color: rgb(245, 245, 245);
-    //background-color: red;
-    background-image:linear-gradient(45deg, rgb(111, 71, 237) 0%, rgb(111, 71, 237) 21%,rgb(101, 92, 233) 21%, rgb(101, 92, 233) 30%,rgb(91, 112, 229) 30%, rgb(91, 112, 229) 35%,rgb(82, 133, 226) 35%, rgb(82, 133, 226) 51%,rgb(72, 154, 222) 51%, rgb(72, 154, 222) 72%,rgb(62, 174, 218) 72%, rgb(62, 174, 218) 81%,rgb(52, 195, 214) 81%, rgb(52, 195, 214) 100%) ;
+    background-color: red;
+    //background-image:linear-gradient(45deg, rgb(111, 71, 237) 0%, rgb(111, 71, 237) 21%,rgb(101, 92, 233) 21%, rgb(101, 92, 233) 30%,rgb(91, 112, 229) 30%, rgb(91, 112, 229) 35%,rgb(82, 133, 226) 35%, rgb(82, 133, 226) 51%,rgb(72, 154, 222) 51%, rgb(72, 154, 222) 72%,rgb(62, 174, 218) 72%, rgb(62, 174, 218) 81%,rgb(52, 195, 214) 81%, rgb(52, 195, 214) 100%) ;
 
     min-width: 300px;
     max-width: 794px;
@@ -39,13 +43,7 @@ body {
 
 }
 
-// @media print {
-//     body {
-//         -webkit-print-color-adjust: ;
-//     }
 
-//     exact
-// }
 
 
 .section {
@@ -106,7 +104,27 @@ body {
         padding-bottom: 0;
     }
     .idiomas{
-        display: hiden;
+        display: none;
     }
 
+    .box-container {
+        box-shadow: none;
+    }
+    .box-container {
+        margin: 0;
+        height: 1123px;
+
+    }
+    body{
+        width: 794px;
+        height: 1123px;
+    }
+    // header{
+    //     display: block !important;
+    //     background-color: red !important;
+    // }
+    // .me {
+    //     width: 180px !important;
+    // }
 }
+
