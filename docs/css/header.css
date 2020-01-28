@@ -59,19 +59,16 @@ header {
   display: flex;
   align-items: center;
   padding: 0; }
-
-.link p {
-  display: inline-block;
-  margin-left: 10px;
-  padding: 0;
-  align-self: center; }
-
-.link a {
-  text-decoration: inherit;
-  color: inherit; }
-
-.links a:hover {
-  color: blue; }
+  .link p {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 0;
+    align-self: center; }
+  .link a {
+    text-decoration: inherit;
+    color: inherit; }
+  .link a:hover {
+    color: blue; }
 
 .svg {
   width: 22px;
@@ -89,7 +86,7 @@ header {
   margin-left: auto;
   margin-right: auto; }
 
-@media all and (min-width: 620px) {
+@media (min-width: 620px) {
   header {
     flex-wrap: nowrap; }
   .me {

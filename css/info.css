@@ -1,7 +1,7 @@
 .autorizo {
   padding: 5px;
   position: absolute;
-  font-size: 14px;
+  font-size: 12px;
   bottom: 7px;
   right: 10px; }
 
@@ -14,9 +14,13 @@
   border-radius: 6px;
   width: 270px;
   box-shadow: 2px 2px 1px grey;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  border: 2px solid green; }
+  .thiscv spam {
+    display: none;
+    border: 2px solid red; }
 
-@media all and (min-width: 794px) {
+@media (min-width: 794px) {
   .thiscv {
     position: absolute;
     bottom: 5px;

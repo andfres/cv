@@ -2,16 +2,12 @@
     position: relative;
     box-sizing: border-box;
     width: 100%;
-
 }
 
 .cursos {
-
     display: grid;
     grid-template-columns: auto;
     justify-content: space-between;
-    
-    
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 }
@@ -24,7 +20,7 @@
 
 }
 
-@media screen and (min-width: 755px) {
+@media (min-width: 755px) {
 
     .cursos{
         grid-template-columns: auto auto;

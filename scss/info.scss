@@ -1,18 +1,16 @@
 .autorizo {
 
-      padding: 5px;
+    padding: 5px;
     position: absolute;
-      font-size: 14px;
-      bottom: 7px;
-      right: 10px;
-
+    font-size: 12px;
+    bottom: 7px;
+    right: 10px;
 }
 
 
 
 .thiscv{
     padding: 5px;
-    
     position: static;
     font-size: 14px;
     background-color: white;
@@ -22,17 +20,28 @@
     width: 270px;
     box-shadow: 2px 2px 1px grey;
     margin-bottom: 10px;
+    border: 2px solid green;
+
+    & spam{
+        display: none;
+        border: 2px solid red;
+    }
 }
 
-@media all and (min-width: 794px) {
+@media (min-width: 794px) {
 
     .thiscv {
-   
         position: absolute;
         bottom: 5px;
         left: 25px;
 
+        // & spam {
+        //     display: none;
+        // }
     }
+
+
+}
 
 
     // .thiscv {
@@ -41,5 +50,4 @@
     //     right: 40px;
     //     width: 200px;
     // }
-    
-}
+

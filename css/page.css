@@ -2,10 +2,6 @@
   size: A4 portrait;
   margin: 0; }
 
-@media print {
-  body {
-    -webkit-print-color-adjust: exact; } }
-
 body * {
   margin: 0;
   padding: 0;
@@ -37,7 +33,7 @@ body {
   background-color: white;
   background-color: #f0f0f0; }
 
-@media all and (min-width: 794px) {
+@media (min-width: 794px) {
   .box-container {
     height: 1123px;
     padding-right: 25px;
@@ -51,18 +47,3 @@ body {
     font-size: 15px !important; }
     .idiomas a {
       color: black !important; } }
-
-@media print {
-  html {
-    padding-top: 0;
-    padding-bottom: 0; }
-  .idiomas {
-    display: none; }
-  .box-container {
-    box-shadow: none; }
-  .box-container {
-    margin: 0;
-    height: 1123px; }
-  body {
-    width: 794px;
-    height: 1123px; } }

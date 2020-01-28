@@ -3,10 +3,6 @@
   size: A4 portrait;
   margin: 0; }
 
-@media print {
-  body {
-    -webkit-print-color-adjust: exact; } }
-
 body * {
   margin: 0;
   padding: 0;
@@ -38,7 +34,7 @@ body {
   background-color: white;
   background-color: #f0f0f0; }
 
-@media all and (min-width: 794px) {
+@media (min-width: 794px) {
   .box-container {
     height: 1123px;
     padding-right: 25px;
@@ -52,21 +48,6 @@ body {
     font-size: 15px !important; }
     .idiomas a {
       color: black !important; } }
-
-@media print {
-  html {
-    padding-top: 0;
-    padding-bottom: 0; }
-  .idiomas {
-    display: none; }
-  .box-container {
-    box-shadow: none; }
-  .box-container {
-    margin: 0;
-    height: 1123px; }
-  body {
-    width: 794px;
-    height: 1123px; } }
 
 header {
   position: relative;
@@ -129,19 +110,16 @@ header {
   display: flex;
   align-items: center;
   padding: 0; }
-
-.link p {
-  display: inline-block;
-  margin-left: 10px;
-  padding: 0;
-  align-self: center; }
-
-.link a {
-  text-decoration: inherit;
-  color: inherit; }
-
-.links a:hover {
-  color: blue; }
+  .link p {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 0;
+    align-self: center; }
+  .link a {
+    text-decoration: inherit;
+    color: inherit; }
+  .link a:hover {
+    color: blue; }
 
 .svg {
   width: 22px;
@@ -159,7 +137,7 @@ header {
   margin-left: auto;
   margin-right: auto; }
 
-@media all and (min-width: 620px) {
+@media (min-width: 620px) {
   header {
     flex-wrap: nowrap; }
   .me {
@@ -250,19 +228,15 @@ main p, footer p {
   flex-shrink: 0;
   flex-grow: 0; }
 
-.row1 {
+.row1, .row2 {
   margin-right: 0;
   margin-left: 0;
-  padding: 0; }
-
-.row2 {
-  margin: 0;
   padding: 0; }
 
 .main p {
   margin-bottom: 5px; }
 
-@media screen and (min-width: 700px) {
+@media (min-width: 700px) {
   main {
     flex-wrap: nowrap;
     justify-content: flex-start; }
@@ -307,14 +281,14 @@ main p, footer p {
 .curso-nombre {
   font-weight: bolder; }
 
-@media screen and (min-width: 755px) {
+@media (min-width: 755px) {
   .cursos {
     grid-template-columns: auto auto; } }
 
 .autorizo {
   padding: 5px;
   position: absolute;
-  font-size: 14px;
+  font-size: 12px;
   bottom: 7px;
   right: 10px; }
 
@@ -327,10 +301,31 @@ main p, footer p {
   border-radius: 6px;
   width: 270px;
   box-shadow: 2px 2px 1px grey;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  border: 2px solid green; }
+  .thiscv spam {
+    display: none;
+    border: 2px solid red; }
 
-@media all and (min-width: 794px) {
+@media (min-width: 794px) {
   .thiscv {
     position: absolute;
     bottom: 5px;
     left: 25px; } }
+
+@media print {
+  html {
+    padding-top: 0;
+    padding-bottom: 0; }
+  .idiomas {
+    display: none; }
+  .box-container {
+    margin: 0;
+    height: 1123px;
+    width: 794px;
+    box-shadow: none; }
+  body {
+    width: 794px;
+    height: 1123px;
+    background-color: transparent;
+    -webkit-print-color-adjust: exact; } }

@@ -13,6 +13,6 @@
 .curso-nombre {
   font-weight: bolder; }
 
-@media screen and (min-width: 755px) {
+@media (min-width: 755px) {
   .cursos {
     grid-template-columns: auto auto; } }

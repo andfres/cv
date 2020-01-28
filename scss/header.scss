@@ -5,26 +5,19 @@ header {
     background-color: rgba(0, 0, 10, 0.1);
     justify-content: space-between;
     //border-radius: 20px;
-
 }
 
 
 .me {
-
     order: 2;
     flex-grow: 1;
     flex-shrink: 2;
     flex-basis: 160px;
-    //max-width: 250px;
     margin: 0;
     padding: 0;
-    //border: 2px solid red;
     border-radius: 50%;
     overflow: hidden;
     box-sizing: content-box;
-    
-
-
 }
 
 
@@ -35,8 +28,6 @@ header {
     display: block;
     filter: grayscale(100%);
     //filter: sepia(50%);
-   
-
 }
 
 
@@ -72,7 +63,6 @@ header {
 
 
 .links {
-
     order: 3;
     flex-grow: 0;
     flex-shrink: 0;
@@ -80,8 +70,6 @@ header {
     font-size: 13px;
     margin-top: auto;
     margin-bottom: auto;
-
-    
 }
 
 
@@ -98,24 +86,23 @@ header {
     align-items: center;
     //border: 1px solid blue;
     padding: 0;
-}
+    
+    p{
+        display: inline-block;
+        margin-left: 10px;
+        padding: 0;
+        align-self: center;
+    }
 
-.link p{
-    display: inline-block;
-    margin-left: 10px;
-    padding: 0;
-    align-self: center;    
-}
+    a{
+         text-decoration: inherit;
+         color: inherit;
+    }
 
-.link a{
-    text-decoration: inherit;
-    color: inherit;
-
-}
-
-.links a:hover {
-    //text-decoration: inherit;
-    color: blue;
+    a:hover {
+        color: blue;
+    }
+    
 }
 
 
@@ -144,7 +131,7 @@ header {
 
 
 
-@media all and (min-width: 620px) {
+@media (min-width: 620px) {
     header{
         flex-wrap: nowrap;
         //background-color: yellow;
@@ -164,15 +151,12 @@ header {
         margin-right: initial;
            //para pegar la izquierda
         margin-right: auto;
-
     }
 }
 
 
 
-//////////////////////////////////////////////
 .idiomas {
-
     position: absolute;
     right: 0;
     top: -15px;
@@ -186,7 +170,6 @@ header {
     }
 
     a:hover {
-
         color: blue;
     }
 }
