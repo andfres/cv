@@ -1,7 +1,12 @@
 
-$mainfont: arial;
-
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+//@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+
+
+//$main_font: 'Baloo Bhaijaan', sans-serif;
+$main_font: arial,
+sans-serif;
+$title_font: 'Permanent Marker',sans-serif;
 
 @import 'page';
 @import 'header';

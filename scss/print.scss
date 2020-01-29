@@ -1,6 +1,11 @@
 @media print  {
 //@media  (min-width: 1200px)  {
 
+    @page {
+        size: A4 portrait;
+        margin: 0;
+    }
+
 
     html {
         padding-top: 0;
@@ -12,27 +17,38 @@
 
         
     .box-container {
-        margin: 0;
+        
+        padding: 30px;
         height: 1123px;
         width: 794px;
         box-shadow: none;
     }
 
-    
+
     body{
         width: 794px;
         height: 1123px;
         background-color: transparent;
-
-        -webkit-print-color-adjust: exact;
+        //background-color: green;
+        background-image: none;
+        //-webkit-print-color-adjust: exact;
     }
 
 
-    // .thiscv spam {
-    //     display: initial;
-    // }
-        
 
+    
+    .thiscv spam {
+        display: initial;
+    }
+        
+    .section, header {
+    
+        //border: 1px solid grey;
+        //box-shadow:   5px 5px 2px grey;
+        background-color: transparent;
+        overflow: hidden;
+
+    }
 
 }
 

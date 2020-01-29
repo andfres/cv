@@ -1,27 +1,28 @@
 .autorizo {
-  padding: 5px;
-  position: absolute;
-  font-size: 12px;
-  bottom: 7px;
-  right: 10px; }
+  padding: 4px;
+  position: static;
+  font-size: 12px; }
 
 .thiscv {
-  padding: 5px;
+  padding: 4px;
   position: static;
-  font-size: 14px;
+  font-size: 12px;
   background-color: white;
-  border: 0.8px solid grey;
+  border: 0.7px solid grey;
   border-radius: 6px;
   width: 270px;
-  box-shadow: 2px 2px 1px grey;
-  margin-bottom: 10px;
-  border: 2px solid green; }
+  box-shadow: 2px 2px 1px grey; }
   .thiscv spam {
-    display: none;
-    border: 2px solid red; }
+    display: none; }
 
 @media (min-width: 794px) {
   .thiscv {
     position: absolute;
-    bottom: 5px;
-    left: 25px; } }
+    bottom: 0;
+    left: 0;
+    margin: 30px; }
+  .autorizo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 30px; } }

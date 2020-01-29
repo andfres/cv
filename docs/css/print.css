@@ -1,11 +1,14 @@
 @media print {
+  @page {
+    size: A4 portrait;
+    margin: 0; }
   html {
     padding-top: 0;
     padding-bottom: 0; }
   .idiomas {
     display: none; }
   .box-container {
-    margin: 0;
+    padding: 30px;
     height: 1123px;
     width: 794px;
     box-shadow: none; }
@@ -13,4 +16,9 @@
     width: 794px;
     height: 1123px;
     background-color: transparent;
-    -webkit-print-color-adjust: exact; } }
+    background-image: none; }
+  .thiscv spam {
+    display: initial; }
+  .section, header {
+    background-color: transparent;
+    overflow: hidden; } }
