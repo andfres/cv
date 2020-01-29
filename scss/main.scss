@@ -41,6 +41,15 @@ main {
     .texto {
         margin-left: 100px;
     }
+
+    .puesto {
+        margin-top: 3px;
+        margin-bottom: 10px;
+        //color: blue;
+        font-weight: bold;
+
+    }
+
 }
 
 
@@ -60,7 +69,6 @@ main {
     text-transform: uppercase;
     margin-bottom: $margen;
     font-size: 1.2em;
-
     font-family: $title_font;
 
     
@@ -69,20 +77,14 @@ main {
     //color: grey;
 }
 
-.empresa {
-    text-transform: uppercase;
-    margin-top: 15px;
-    margin-bottom: $margen;
-}
+// .empresa {
+//     text-transform: uppercase;
+//     margin-top: 15px;
+//     margin-bottom: $margen;
+// }
 
 
 
-.puesto {
-    margin-top: 3px;
-    margin-bottom: 5px;
-    //color: blue;
-    font-weight: bold;
-}
 
 
 
@@ -90,7 +92,7 @@ main p, footer p{
     text-align: justify;
     text-justify: auto;
     overflow-wrap: break-word;
-    font-size: 13px;
+    font-size: $tam_font;
     line-height: 1.3em;
     //color: red;
 }
@@ -122,7 +124,7 @@ main p, footer p{
 
 
 
-@media (min-width: 700px) {
+@media print, (min-width: 700px) {
 
     main {
         flex-wrap: nowrap;

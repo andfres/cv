@@ -15,14 +15,14 @@
   .thiscv spam {
     display: none; }
 
-@media (min-width: 794px) {
+@media print, (min-width: 794px) {
   .thiscv {
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 0;
     margin: 30px; }
   .autorizo {
     position: absolute;
     bottom: 0;
-    right: 0;
+    left: 0;
     margin: 30px; } }

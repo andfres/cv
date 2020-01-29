@@ -143,7 +143,7 @@ header {
 
 
 
-@media (min-width: 620px) {
+@media print, (min-width: 620px) {
     header{
         flex-wrap: nowrap;
         //background-color: yellow;

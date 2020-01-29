@@ -6,8 +6,7 @@
 .cursos {
   display: grid;
   grid-template-columns: auto;
-  justify-content: space-between;
-  grid-column-gap: 10px;
+  justify-content: space-around;
   grid-row-gap: 10px; }
 
 .curso-nombre {

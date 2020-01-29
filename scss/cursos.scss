@@ -9,14 +9,16 @@
 
     display: grid;
     grid-template-columns: auto;
-    justify-content: space-between;
-    
-    
-    grid-column-gap: 10px;
+    justify-content: space-around;
+    //border: 2px solid red;
+
+    //grid-column-gap: 10px;
     grid-row-gap: 10px;
 }
 
-
+// .curso{
+//     border: 2px solid green;
+// }
 
 .curso-nombre {
     font-weight: bolder;

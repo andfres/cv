@@ -21,6 +21,10 @@ main {
       width: 100%; }
   .job .texto {
     margin-left: 100px; }
+  .job .puesto {
+    margin-top: 3px;
+    margin-bottom: 10px;
+    font-weight: bold; }
 
 .info {
   display: flex;
@@ -34,24 +38,12 @@ main {
   text-transform: uppercase;
   margin-bottom: 10px;
   font-size: 1.2em;
-  font-family: 'Permanent Marker',cursive;
   padding-left: -5px; }
-
-.empresa {
-  text-transform: uppercase;
-  margin-top: 15px;
-  margin-bottom: 10px; }
-
-.puesto {
-  margin-top: 3px;
-  margin-bottom: 5px;
-  font-weight: bold; }
 
 main p, footer p {
   text-align: justify;
   text-justify: auto;
   overflow-wrap: break-word;
-  font-size: 13px;
   line-height: 1.3em; }
 
 .fecha {
@@ -70,7 +62,7 @@ main p, footer p {
 .main p {
   margin-bottom: 5px; }
 
-@media (min-width: 700px) {
+@media print, (min-width: 700px) {
   main {
     flex-wrap: nowrap;
     justify-content: flex-start; }

@@ -137,7 +137,7 @@ header {
   margin-left: auto;
   margin-right: auto; }
 
-@media (min-width: 620px) {
+@media print, (min-width: 620px) {
   header {
     flex-wrap: nowrap; }
   .me {
@@ -187,6 +187,10 @@ main {
       width: 100%; }
   .job .texto {
     margin-left: 100px; }
+  .job .puesto {
+    margin-top: 3px;
+    margin-bottom: 10px;
+    font-weight: bold; }
 
 .info {
   display: flex;
@@ -202,16 +206,6 @@ main {
   font-size: 1.2em;
   font-family: "Permanent Marker", sans-serif;
   padding-left: -5px; }
-
-.empresa {
-  text-transform: uppercase;
-  margin-top: 15px;
-  margin-bottom: 10px; }
-
-.puesto {
-  margin-top: 3px;
-  margin-bottom: 5px;
-  font-weight: bold; }
 
 main p, footer p {
   text-align: justify;
@@ -236,7 +230,7 @@ main p, footer p {
 .main p {
   margin-bottom: 5px; }
 
-@media (min-width: 700px) {
+@media print, (min-width: 700px) {
   main {
     flex-wrap: nowrap;
     justify-content: flex-start; }
@@ -274,8 +268,7 @@ main p, footer p {
 .cursos {
   display: grid;
   grid-template-columns: auto;
-  justify-content: space-between;
-  grid-column-gap: 10px;
+  justify-content: space-around;
   grid-row-gap: 10px; }
 
 .curso-nombre {
@@ -302,16 +295,16 @@ main p, footer p {
   .thiscv spam {
     display: none; }
 
-@media (min-width: 794px) {
+@media print, (min-width: 794px) {
   .thiscv {
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 0;
     margin: 30px; }
   .autorizo {
     position: absolute;
     bottom: 0;
-    right: 0;
+    left: 0;
     margin: 30px; } }
 
 @media print {
@@ -332,9 +325,11 @@ main p, footer p {
     width: 794px;
     height: 1123px;
     background-color: transparent;
-    background-image: none; }
+    background-image: none;
+    -webkit-print-color-adjust: exact; }
+  .section, header {
+    background-color: transparent; }
   .thiscv spam {
     display: initial; }
-  .section, header {
-    background-color: transparent;
-    overflow: hidden; } }
+  .cursos {
+    grid-template-columns: auto auto; } }

@@ -31,24 +31,31 @@
         background-color: transparent;
         //background-color: green;
         background-image: none;
-        //-webkit-print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
     }
 
 
 
+    .section, header{
+        background-color:  transparent;
+    }
     
     .thiscv spam {
         display: initial;
     }
-        
-    .section, header {
     
-        //border: 1px solid grey;
-        //box-shadow:   5px 5px 2px grey;
-        background-color: transparent;
-        overflow: hidden;
-
+    .cursos {
+        grid-template-columns: auto auto;
     }
+
+    // .autorizo {
+
+    //     position: absolute;
+    //     bottom: 10px;
+    //     left: 30px;
+    //     //margin: 20px;
+    // }
+
 
 }
 
