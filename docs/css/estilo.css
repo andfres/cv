@@ -257,8 +257,10 @@ main p, footer p {
   margin: 5px; }
 
 .tag2 {
-  margin: 0 5px;
-  font-weight: normal; }
+  margin: 0 4px;
+  font-weight: normal;
+  padding: 2px 8px;
+  font-size: 11px; }
 
 .formacion {
   position: relative;
@@ -286,11 +288,10 @@ main p, footer p {
 .thiscv {
   padding: 4px;
   position: static;
-  font-size: 12px;
+  font-size: 13px;
   background-color: white;
   border: 0.7px solid grey;
   border-radius: 6px;
-  width: 270px;
   box-shadow: 2px 2px 1px grey; }
   .thiscv spam {
     display: none; }
