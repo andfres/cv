@@ -1,3 +1,5 @@
+
+
 header {
     position: relative;
     display: flex;
@@ -68,10 +70,6 @@ header {
 }
 
 
-// Audiowide
-// Baloo+Bhai
-// Carter+One
-// Gochi+Hand
 
 
 .links {
@@ -173,6 +171,8 @@ header {
     right: 0;
     top: -15px;
     font-size: 13px;
+
+    display: none;
 
     a {
         color: grey;
