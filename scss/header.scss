@@ -57,12 +57,11 @@ header {
     
     & h2 {
         font-size: 19px;
-        //font-family: Arial, Helvetica, sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
 
-         font-family: 'Fredoka One',
-         cursive;
+ 
          
-         font-size: 100;
+        font-size: 100;
         white-space: nowrap;
         margin-bottom: 20px;
         //border: 2px solid red;
@@ -172,7 +171,7 @@ header {
     top: -15px;
     font-size: 13px;
 
-    display: none;
+    //display: none;
 
     a {
         color: grey;
