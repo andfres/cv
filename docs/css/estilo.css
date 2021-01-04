@@ -92,6 +92,7 @@ header {
   .titulos h2 {
     font-size: 19px;
     font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
     font-size: 100;
     white-space: nowrap;
     margin-bottom: 20px; }
@@ -217,6 +218,12 @@ main p, footer p {
   font-size: 13px;
   line-height: 1.3em; }
 
+main p {
+  margin-bottom: 6px; }
+
+ul {
+  font-size: 13px; }
+
 .fecha {
   margin-right: 40px; }
 
@@ -308,6 +315,8 @@ main p, footer p {
     box-shadow: 2px 2px 1px grey;
     display: inline-block;
     left: 0; }
+    .info2 .thiscv spam {
+      display: none; }
 
 @media print, (min-width: 794px) {
   .info2 {
@@ -350,6 +359,6 @@ main p, footer p {
   .section, header {
     background-color: transparent; }
   .thiscv spam {
-    display: initial; }
+    display: initial !important; }
   .cursos {
     grid-template-columns: auto auto; } }
