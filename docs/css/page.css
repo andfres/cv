@@ -22,7 +22,8 @@ body {
   padding-left: 2vw;
   background-color: white;
   box-sizing: border-box;
-  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.5); }
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.5);
+  padding-bottom: 10px; }
 
 .section {
   padding: 10px;

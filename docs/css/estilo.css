@@ -23,7 +23,8 @@ body {
   padding-left: 2vw;
   background-color: white;
   box-sizing: border-box;
-  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.5); }
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.5);
+  padding-bottom: 10px; }
 
 .section {
   padding: 10px;
@@ -52,7 +53,7 @@ header {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  background-color: rgba(0, 0, 10, 0.1);
+  background-color: #f0f0f0;
   justify-content: space-between;
   padding: 10px; }
 
@@ -293,33 +294,38 @@ main p, footer p {
   .cursos {
     grid-template-columns: auto auto; } }
 
-.autorizo {
-  padding: 4px;
-  position: static;
-  font-size: 12px; }
-
-.thiscv {
-  padding: 4px;
-  position: static;
-  font-size: 13px;
-  background-color: white;
-  border: 0.7px solid grey;
-  border-radius: 6px;
-  box-shadow: 2px 2px 1px grey; }
-  .thiscv spam {
-    display: none; }
+.info2 {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0; }
+  .info2 .thiscv {
+    padding: 4px;
+    font-size: 13px;
+    background-color: white;
+    border: 0.7px solid grey;
+    border-radius: 6px;
+    box-shadow: 2px 2px 1px grey;
+    display: inline-block;
+    left: 0; }
 
 @media print, (min-width: 794px) {
-  .thiscv {
+  .info2 {
     position: absolute;
     bottom: 0;
     right: 0;
     margin: 30px; }
-  .autorizo {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 30px; } }
+    .info2 .thiscv {
+      left: auto; }
+  /*
+    .autorizo {
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 30px;
+    }
+*/ }
 
 @media print {
   @page {

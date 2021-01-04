@@ -19,11 +19,8 @@ body {
     background-color: rgb(245, 245, 245);
     //background-color: red;
     background-image:linear-gradient(45deg, rgb(111, 71, 237) 0%, rgb(111, 71, 237) 21%,rgb(101, 92, 233) 21%, rgb(101, 92, 233) 30%,rgb(91, 112, 229) 30%, rgb(91, 112, 229) 35%,rgb(82, 133, 226) 35%, rgb(82, 133, 226) 51%,rgb(72, 154, 222) 51%, rgb(72, 154, 222) 72%,rgb(62, 174, 218) 72%, rgb(62, 174, 218) 81%,rgb(52, 195, 214) 81%, rgb(52, 195, 214) 100%) ;
-
     min-width: 300px;
     max-width: 794px;
-
-
 }
 
 
@@ -35,8 +32,7 @@ body {
     background-color: white;
     box-sizing: border-box;
     box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.5);
-
-
+    padding-bottom: 10px;
 }
 
 
@@ -44,7 +40,6 @@ body {
     padding: 10px;
     font-family: arial, sans-serif;
     margin-top: 10px;
-
     //border: 2px solid red;
     position: relative;
     display: block;
