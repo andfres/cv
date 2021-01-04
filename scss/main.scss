@@ -30,6 +30,7 @@ main {
         top: 0;
         border: 1px solid grey;
         background-color: white;
+        display: none;
 
         img{
 
@@ -38,9 +39,7 @@ main {
         }
     }
 
-    .texto {
-        margin-left: 100px;
-    }
+
 
     .puesto {
         margin-top: 3px;
@@ -66,15 +65,11 @@ main {
 }
 
 .titulo-grande {
+    font-family: $title_font;
     text-transform: uppercase;
     margin-bottom: $margen;
     font-size: 1.2em;
-    font-family: $title_font;
-
-    
     padding-left: -5px;
-    //border-bottom: 2px solid black;
-    //color: grey;
 }
 
 // .empresa {
@@ -118,8 +113,26 @@ main p, footer p{
     //background-color: rgba(200, 0, 100, 0.5);
 }
 
-.main p {
-    margin-bottom: 5px;
+.row1{
+  order:2;
+}
+
+.row2{
+  order:1;
+}
+
+
+@media print, (min-width: 500px) {
+  .job .logo{
+    display: block;
+  }
+  .job .texto{
+    
+    margin-left: 100px;
+    
+  }
+
+
 }
 
 
@@ -135,9 +148,14 @@ main p, footer p{
         margin-right: 10px;
         margin-left: 0;
         flex: 2 1 500px;
+        order:1;
     }
 
     .row2 {
         flex: 1 1 250px;
+        order:2;
     }
+
+ 
+
 }

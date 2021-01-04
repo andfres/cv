@@ -53,18 +53,21 @@ header {
   display: flex;
   flex-wrap: wrap;
   background-color: rgba(0, 0, 10, 0.1);
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 10px; }
 
 .me {
   order: 2;
   flex-grow: 1;
   flex-shrink: 2;
   flex-basis: 160px;
-  margin: 0;
+  margin: 10px;
   padding: 0;
   border-radius: 50%;
   overflow: hidden;
-  box-sizing: content-box; }
+  box-sizing: content-box;
+  margin: auto;
+  max-width: 230px; }
 
 .me img {
   width: 100%;
@@ -76,11 +79,11 @@ header {
   width: 100%;
   text-transform: uppercase;
   padding: 0 20px 0 20px;
-  text-align: center;
+  text-align: left;
   margin-top: 10px; }
   .titulos .nombre {
-    font-size: 2em;
     font-family: "Permanent Marker", sans-serif;
+    font-size: 2em;
     line-height: 1em;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -182,11 +185,10 @@ main {
     left: 0;
     top: 0;
     border: 1px solid grey;
-    background-color: white; }
+    background-color: white;
+    display: none; }
     .job .logo img {
       width: 100%; }
-  .job .texto {
-    margin-left: 100px; }
   .job .puesto {
     margin-top: 3px;
     margin-bottom: 10px;
@@ -201,10 +203,10 @@ main {
   color: dimgray; }
 
 .titulo-grande {
+  font-family: "Permanent Marker", sans-serif;
   text-transform: uppercase;
   margin-bottom: 10px;
   font-size: 1.2em;
-  font-family: "Permanent Marker", sans-serif;
   padding-left: -5px; }
 
 main p, footer p {
@@ -227,8 +229,17 @@ main p, footer p {
   margin-left: 0;
   padding: 0; }
 
-.main p {
-  margin-bottom: 5px; }
+.row1 {
+  order: 2; }
+
+.row2 {
+  order: 1; }
+
+@media print, (min-width: 500px) {
+  .job .logo {
+    display: block; }
+  .job .texto {
+    margin-left: 100px; } }
 
 @media print, (min-width: 700px) {
   main {
@@ -237,9 +248,11 @@ main p, footer p {
   .row1 {
     margin-right: 10px;
     margin-left: 0;
-    flex: 2 1 500px; }
+    flex: 2 1 500px;
+    order: 1; }
   .row2 {
-    flex: 1 1 250px; } }
+    flex: 1 1 250px;
+    order: 2; } }
 
 .skills > .tags {
   text-align: center;
