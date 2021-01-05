@@ -161,7 +161,8 @@ header {
   position: absolute;
   right: 0;
   top: -15px;
-  font-size: 13px; }
+  font-size: 13px;
+  display: none; }
   .idiomas a {
     color: grey;
     text-decoration: none;

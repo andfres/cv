@@ -8,18 +8,14 @@ main {
 }
 
 
-
 .job {
     position: relative;
     margin-top: 10px;
     padding-bottom: 7px;
-   // border: 1px solid green;
-    //margin-bottom: 10px;
-    //border: 2px solid red;
+
 
     &:last-child{
 
-        //border: 1px solid red;
         padding-bottom: 0 ;
     }
 
@@ -63,7 +59,6 @@ main {
     border-bottom: 1px solid black;
     margin-top: $margen;
     color: $grey_color;
-
 }
 
 .titulo-grande {
@@ -72,6 +67,7 @@ main {
     margin-bottom: $margen;
     font-size: 1.2em;
     padding-left: -5px;
+
 }
 
 // .empresa {
@@ -101,7 +97,6 @@ main p{
 ul{
   font-size: $tam_font;
 }
-
 
 
 .fecha{
